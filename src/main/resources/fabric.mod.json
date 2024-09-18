@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "citygenerator",
+	"version": "${version}",
+	"name": "CityGenerator",
+	"description": "This is a mod for a new generation of cities",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/citygenerator/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.lenno.citygenerator.CityGenerator"
+		],
+		"fabric-datagen": [
+			"de.lenno.citygenerator.CityGeneratorDataGenerator"
+		],
+		"client": [
+			"de.lenno.citygenerator.CityGeneratorClientClass"
+		]
+	},
+	"mixins": [
+		"citygenerator.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
